@@ -1,0 +1,31 @@
+Feature: Premium Content Access Validation
+
+  As a premium user of the music service,
+  I want to see exclusive content for premium account holders,
+  So that I feel my subscription price is justified.
+
+  Scenario: Premium user accesses playlists
+    Given I am logged in as a premium user
+    When I request the playlists
+    Then I should see the "Premium" playlist in the response
+
+  Scenario: Free user accesses playlists
+    Given I am logged in as a free user
+    When I request the playlists
+    Then I should not see the "Premium" playlist in the response
+
+  Scenario: Unknown user type accesses playlists
+    Given I am logged in as an unknown user type
+    When I request the playlists
+    Then I should receive a HTTP 400 Bad Request response
+    And the response message should be "Unknown user type"
+
+
+Explanation:
+Feature: Describes the overall feature being tested - in this case, the validation of content access based on user subscription type.
+
+Scenario 1 (Premium user accesses playlists): Outlines the expected behavior for a premium user accessing the playlists. It checks that the "Premium" playlist is included in the response.
+
+Scenario 2 (Free user accesses playlists): Describes the expected behavior for a free user. It ensures that the "Premium" playlist is not included in their playlists.
+
+Scenario 3 (Unknown user type accesses playlists): Details the expected system behavior when an unknown user type tries to access the playlists, expecting a 400 Bad Request response with a specific error message.

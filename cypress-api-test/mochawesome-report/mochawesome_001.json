@@ -1,0 +1,142 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-04T08:35:25.386Z",
+    "end": "2023-12-04T08:35:25.689Z",
+    "duration": 303,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "957fe005-7f7c-4b67-a5c1-ae6d6732e1ac",
+      "title": "",
+      "fullFile": "cypress/e2e/UserPlaylist.feature",
+      "file": "cypress/e2e/UserPlaylist.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7b22fda5-2d67-4ca4-bb8c-a81f5d136301",
+          "title": "Free User Access to Playlists, Check Premium User Playlist Access And Validate Playlist API Response for Invalid User Types",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Free user requests playlists",
+              "fullTitle": "Free User Access to Playlists, Check Premium User Playlist Access And Validate Playlist API Response for Invalid User Types Free user requests playlists",
+              "timedOut": null,
+              "duration": 135,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "474f5c50-4a3b-45cd-a989-00c5ad96c0df",
+              "parentUUID": "7b22fda5-2d67-4ca4-bb8c-a81f5d136301",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Premium user accesses play lists",
+              "fullTitle": "Free User Access to Playlists, Check Premium User Playlist Access And Validate Playlist API Response for Invalid User Types Premium user accesses play lists",
+              "timedOut": null,
+              "duration": 43,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "0ddbc9dc-ef3b-44d6-bc13-1d13e1d226b9",
+              "parentUUID": "7b22fda5-2d67-4ca4-bb8c-a81f5d136301",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Request play lists with an unknown user type",
+              "fullTitle": "Free User Access to Playlists, Check Premium User Playlist Access And Validate Playlist API Response for Invalid User Types Request play lists with an unknown user type",
+              "timedOut": null,
+              "duration": 44,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "4cc29a80-a226-4597-8c71-21c4d3d8dfdb",
+              "parentUUID": "7b22fda5-2d67-4ca4-bb8c-a81f5d136301",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "474f5c50-4a3b-45cd-a989-00c5ad96c0df",
+            "0ddbc9dc-ef3b-44d6-bc13-1d13e1d226b9",
+            "4cc29a80-a226-4597-8c71-21c4d3d8dfdb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 222,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
