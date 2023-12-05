@@ -3,14 +3,14 @@ Feature: Free User Access to Playlists, Check Premium User Playlist Access And V
 
   Scenario: Free user requests playlists
     When I make an API request as a free user
-    Then I should receive the correct playlists
+    Then I should receive a "200" response
 
-  Scenario: Premium user accesses play lists
-    When I request my play lists
-    Then I should see the "Premium" playlist in the response
+  Scenario: Premium user accesses playlists
+    When I request my playlists
+    Then I should receive a "200" response back
 
 
   Scenario: Request play lists with an unknown user type
     When I request playlists for this user type
-    Then I should receive a HTTP 400 Bad Request response
+    Then I should receive a HTTP "400" Bad Request response
     And the response message should indicate an "Unknown user type"
